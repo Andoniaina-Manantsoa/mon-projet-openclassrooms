@@ -1,0 +1,279 @@
+#logo {
+    margin-top: 30px;
+    width: 100px;
+}
+
+body {
+    font-family: 'Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap', sans-serif;
+    background: #f4f7f6;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #7a6e4d;
+    color: white;
+    padding-bottom: 30px;
+}
+
+h1 {
+    color: rgb(85, 156, 57);
+    font-family: 'theblacklist', Arial, sans-serif;
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+h2 {
+    font-family: 'Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap';
+    font-size: 1.5em;
+    width: 400px;
+    margin: auto;
+}
+
+h3::before {
+    content: "«";
+    color: grey;
+}
+
+h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+h3::after {
+    content: "»";
+    color: grey;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:focus {
+    color: red;
+}
+
+ul {
+    padding: 0;
+    display: inline;
+}
+
+nav {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.5);
+    font-size: 1.1em;
+    padding: 15px;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+}
+
+li:hover {
+    font-weight: bold;
+}
+
+section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    color: black;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type='submit'] {
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.form-nom-email,
+.form-number {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+table {
+    color: black;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    margin: 50px;
+}
+
+td,
+th {
+    border: 1px solid #cca62b;
+    padding: 15px;
+}
+
+caption {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.tarif-main {
+    width: 50%;
+    margin: auto;
+}
+
+footer {
+    background-color: #7a6e4d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Id*/
+#Contact {
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+#projets {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#picture-project img,
+#picture-project video {
+    width: 80%;
+}
+
+#pictur {
+    width: 70%;
+}
+
+#musique {
+    margin-inline: 100px;
+}
+
+/*Class*/
+.section-contact h2 {
+    color: #9b8029;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cta {
+    display: inline-block;
+    background: linear-gradient(#9b8029, #acaeed);
+    color: white;
+    border-radius: 50px;
+    padding: 20px 30px;
+}
+
+.separator {
+    width: 40px;
+    height: 1px;
+    margin: 15px auto;
+    display: block;
+    background-color: #999999;
+}
+
+.contener {
+    width: 80%;
+    margin: auto;
+}
+
+.projet {
+    width: 400px;
+    margin: 30px auto;
+    display: inline-block;
+    background-color: white;
+    padding-bottom: 15px;
+    border: 0px black solid;
+    border-radius: 10px;
+    border-color: black;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.projet:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: 0.3s;
+}
+
+.projet img {
+    min-width: 400px;
+    height: 266px;
+}
+
+.picture {
+    width: 400px;
+    height: 266px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.projet span {
+    text-transform: uppercase;
+    display: block;
+}
+
+.projet .date-project {
+    font-size: 0.7em;
+}
+
+/*POLICES*/
+@font-face {
+    font-family: 'theblacklist';
+    src: url('../Source/theblacklist.ttf') format('truetype');
+}
+
+/*MEDIA*/
+@media all and(max-width:1000px) {
+    .projet {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .projet img {
+        width: 100%;
+        min-width: auto;
+        height: auto;
+    }
+
+    .projet .picture {
+        width: 100%;
+        height: auto
+    }
+
+    header h2 {
+        width: 90%;
+    }
+}
