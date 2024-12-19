@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <title> Projet | Zoo</title>
-    <link rel="stylesheet" type="text/css" href="design/default.css">
+    <link rel="stylesheet" type="text/css" href="../design/default.css">
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/png" href="pictures/logo.jpg">
+    <link rel="icon" type="image/png" href="../pictures/logo.jpg">
 </head>
 
 <body>
@@ -22,10 +22,10 @@
         <!--MENU-->
         <nav>
             <ul>
-                <li><a href="index.html" title="aller au page d'acceil">Accueil</a></li>
+                <li><a href="../HTML/index.html" title="aller au page d'acceil">Accueil</a></li>
                 <li><a href="#visite">Visite du zoo</a></li>
-                <li><a href="contact.html">Réservation</a></li>
-                <li><a href="tarif.html">Tarif</a></li>
+                <li><a href="../HTML/contact.html">Réservation</a></li>
+                <li><a href="../HTML/tarif.html">Tarif</a></li>
             </ul>
         </nav>
 
@@ -37,100 +37,56 @@
                     mes heures perdues.</p>
             </section>
 
-            <section id="picture-project">
+            <section class="portfolio-section-photos">
                 <h3>Projets</h3>
 
                 <!--CONTENEUR-->
-                <div id="projets">
+                <div class="grid-animaux">
 
-                    <!--PROJET 1-->
-                    <div class="projet">
-                        <a href="project.html">
-                            <div class="picture">
-                                <img src="pictures/illustration_1.jpg" alt="mon premier projet" />
-                            </div>
-                            <span>Le roi lion</span>
-                            <span class="date-project">09/10/2024 </span>
-                        </a>
-                    </div>
-
-                    <!--PROJET 2-->
-                    <div class="projet">
-                        <a href="project.html">
-                            <div class="picture">
-                                <img src="pictures/illustration_2.jpg" alt="mon premier projet" />
-                            </div>
-                            <span>Le petite ours Brun</span>
-                            <span class="date-project">09/10/2024 </span>
-                        </a>
-                    </div>
-
-                    <!--PROJET 3-->
-                    <div class="projet">
-                        <a href="project.html">
-                            <div class="picture">
-                                <img src="pictures/illustration_3.jpg" alt="mon premier projet" />
-                            </div>
-                            <span>Le petit panda</span>
-                            <span class="date-project">09/10/2024 </span>
-                        </a>
-                    </div>
-
-                    <!--PROJET 4-->
-                    <div class="projet">
-                        <a href="project.html">
-                            <div class="picture">
-                                <img src="pictures/illustration_4.jpg" alt="mon premier projet" />
-                            </div>
-                            <span>La famille elephant</span>
-                            <span class="date-project">09/10/2024 </span>
-                        </a>
-                    </div>
-
-                    <!--PROJET 5-->
-                    <div class="projet">
-                        <a href="project.html">
-                            <div class="picture">
-                                <img src="pictures/illustration_5.jpg" alt="mon premier projet" />
-                            </div>
-                            <span>Le beau zebre</span>
-                            <span class="date-project">09/10/2024 </span>
-                        </a>
-                    </div>
-
-                    <!--PROJET 6-->
-                    <div class="projet">
-                        <a href="project.html">
-                            <div class="picture">
-                                <img src="pictures/illustration_6.jpg" alt="mon premier projet" />
-                            </div>
-                            <span>La belle giraffe</span>
-                            <span class="date-project">09/10/2024 </span>
-                        </a>
-                    </div>
+                    <a href="../pictures/illustration_1.jpg" class="lien-conteneur-photo">
+                        <img src="../pictures/illustration_1.jpg" alt="Le Roi Lion">
+                        <div class="photo-hover">Voir la photo</div>
+                    </a>   
+                    <a href="../pictures/illustration_2.jpg" class="lien-conteneur-photo">
+                        <img src="../pictures/illustration_2.jpg" alt="Le petite ours brun">
+                        <div class="photo-hover">Voir la photo</div>
+                    </a>
+                    <a href="../pictures/illustration_3.jpg" class="lien-conteneur-photo">
+                        <img src="../pictures/illustration_3.jpg" alt="Le petit Panda">
+                        <div class="photo-hover">Voir la photo</div>
+                    </a>
+                    <a href="../pictures/illustration_4.jpg" class="lien-conteneur-photo">
+                        <img src="../pictures/illustration_4.jpg" alt="La famille elephant">
+                        <div class="photo-hover">Voir la photo</div>
+                    </a>
+                    <a href="../pictures/illustration_5.jpg" class="lien-conteneur-photo">
+                        <img src="../pictures/illustration_5.jpg" alt="Le beau zebre">
+                        <div class="photo-hover">Voir la photo</div>
+                    </a>
+                    <a href="../pictures/illustration_6.jpg" class="lien-conteneur-photo">
+                        <img src="../pictures/illustration_6.jpg" alt="La belle giraffe" >
+                        <div class="photo-hover">Voir la photo</div>
+                    </a>
                 </div>
             </section>
-
-            <section>
-                <h3>Contact</h3>
-                <div id="Contact">
-                    <p>Si vous voulez me contacter, n'hésitez pas à m'envoyer un email à <b><a
-                                href="mailto:mon@zoo.com">mon@zoo.com</a></b>.</p>
-                </div>
-            </section>
-        </div>
-
-    </main>
+        </main>
 
     <!--FOOTER-->
     <footer>
-        <img src="pictures/logo.jpg" alt="Logo" id="logo">
+        <!--Contact-->
+        <section>
+            <div id="Contact">
+                <p><b>Nous contacter : </b> </p>
+                <p>E-mail : <b><a href="mailto:mon@zoo.com">mon@zoo.com</a></b></p>       
+                <p>Téléphone : <b><a href="+336000000">+33 6 00 00 00</a></b></p>
+            </div>
+        </section>
         <a href="https://twitter.com/" class="lien-icone">
-            <img src="pictures/twitter.png" alt="Logo Twitter">
+            <img src="../pictures/twitter.png" alt="Logo Twitter">
         </a>
 
         <a href="https://www.instagram.com/" class="lien-icone">
-            <img src="pictures/instagram.png" alt="Logo Instagram">
+            <img src="../pictures/instagram.png" alt="Logo Instagram">
         </a>
     </footer>
 

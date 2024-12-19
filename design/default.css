@@ -11,7 +11,7 @@ body {
 
 header {
     text-align: center;
-    background-color: #7a6e4d;
+    background-color: #cca254;
     color: white;
     padding-bottom: 30px;
 }
@@ -30,28 +30,13 @@ h2 {
     margin: auto;
 }
 
-h3::before {
-    content: "«";
-    color: grey;
-}
-
-h3 {
-    font-size: 1.5em;
-    text-transform: uppercase;
-}
-
-h3::after {
-    content: "»";
-    color: grey;
-}
-
 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
 
-a:focus {
-    color: red;
+a:hover{
+    color: blue;
 }
 
 ul {
@@ -76,6 +61,14 @@ li {
 li:hover {
     font-weight: bold;
 }
+
+li:active{
+    color:blue;
+}
+
+img {
+    max-width: 100%;
+  }
 
 section {
     text-align: center;
@@ -105,20 +98,7 @@ input[type='submit'] {
     width: 200px;
     margin: auto;
     margin-top: 30px;
-}
-
-.form-nom-email,
-.form-number {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.form-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 table {
@@ -140,28 +120,19 @@ caption {
     margin-bottom: 80px;
 }
 
-.tarif-main {
-    width: 50%;
-    margin: auto;
-}
-
 footer {
-    background-color: #7a6e4d;
+    background-color: #cca254;
     color: white;
-    text-align: center;
     padding: 15px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:center;
     justify-content: space-between;
 }
 
 /*Id*/
 #Contact {
-    border: 1px black solid;
-    border-radius: 15px;
-    padding: 30px;
-    margin-bottom: 50px;
+    text-align: justify;
 }
 
 #projets {
@@ -171,7 +142,7 @@ footer {
 
 #picture-project img,
 #picture-project video {
-    width: 80%;
+    width: 50%;
 }
 
 #pictur {
@@ -194,7 +165,7 @@ footer {
     background: linear-gradient(#9b8029, #acaeed);
     color: white;
     border-radius: 50px;
-    padding: 20px 30px;
+    padding: 20px;
 }
 
 .separator {
@@ -205,22 +176,40 @@ footer {
     background-color: #999999;
 }
 
+.form-nom-email,
+.form-number {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
 .contener {
     width: 80%;
     margin: auto;
 }
 
-.projet {
-    width: 400px;
+.tarif-main {
+    width: 50%;
+    margin: auto;
+}
+
+.grid-animaux {
+    width: 1000px;
     margin: 30px auto;
-    display: inline-block;
-    background-color: white;
     padding-bottom: 15px;
-    border: 0px black solid;
-    border-radius: 10px;
-    border-color: black;
     overflow: hidden;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 15px;
 }
 
 .projet:hover {
@@ -228,17 +217,9 @@ footer {
     transition: 0.3s;
 }
 
-.projet img {
-    min-width: 400px;
-    height: 266px;
-}
-
-.picture {
-    width: 400px;
-    height: 266px;
-    overflow: hidden;
-    margin-bottom: 15px;
-}
+.portfolio-section-photos {
+    margin-bottom: 80px;
+  }
 
 .projet span {
     text-transform: uppercase;
@@ -249,6 +230,35 @@ footer {
     font-size: 0.7em;
 }
 
+.grid-animaux img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lien-conteneur-photo {
+    position: relative;
+  }
+
+.photo-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+  }
+
+.lien-conteneur-photo:hover .photo-hover {
+    display: flex;
+}
+
 /*POLICES*/
 @font-face {
     font-family: 'theblacklist';
@@ -257,18 +267,18 @@ footer {
 
 /*MEDIA*/
 @media all and(max-width:1000px) {
-    .projet {
+    .projets {
         width: 100%;
         margin: 15px auto;
     }
 
-    .projet img {
+    .projets img {
         width: 100%;
         min-width: auto;
         height: auto;
     }
 
-    .projet .picture {
+    .projets .picture {
         width: 100%;
         height: auto
     }
