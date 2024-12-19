@@ -1,12 +1,9 @@
-#logo {
-    margin-top: 30px;
-    width: 100px;
-}
 
-body {
+html, body {
     font-family: 'Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap', sans-serif;
     background: #f4f7f6;
     margin: 0;
+    height: 100%;
 }
 
 header {
@@ -123,14 +120,19 @@ caption {
 footer {
     background-color: #cca254;
     color: white;
-    padding: 15px;
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
+    padding: 15px;
     justify-content: space-between;
 }
 
 /*Id*/
+#logo {
+    margin-top: 30px;
+    width: 100px;
+}
+
 #Contact {
     text-align: justify;
 }
@@ -266,21 +268,46 @@ footer {
 }
 
 /*MEDIA*/
-@media all and(max-width:1000px) {
-    .projets {
-        width: 100%;
-        margin: 15px auto;
-    }
+@media screen and (max-width: 980px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      header nav img {
+        margin-bottom: 20px;
+      }
+    
+      header,
+      footer {
+        padding: 20px 20px;
+      }
+    
+      h1 {
+        font-size: 2em;
+      }
+    
+      section {
+        padding: 50px 20px 50px 20px;
+      }
+    
+      nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
 
-    .projets img {
-        width: 100%;
-        min-width: auto;
+    .grid-animaux{
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 100%; 
+        min-width: auto; 
         height: auto;
     }
 
-    .projets .picture {
-        width: 100%;
-        height: auto
+    .lien-conteneur-photo, .photo-hover{
+        width: 100%; 
+        height: auto;
     }
 
     header h2 {
