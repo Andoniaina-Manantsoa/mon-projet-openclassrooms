@@ -36,6 +36,10 @@ a:hover{
     color: blue;
 }
 
+a:focus{
+    font-weight: bold;
+}
+
 ul {
     padding: 0;
     display: inline;
@@ -55,12 +59,8 @@ li {
     margin: 10px;
 }
 
-li:hover {
+li:focus {
     font-weight: bold;
-}
-
-li:active{
-    color:blue;
 }
 
 img {
